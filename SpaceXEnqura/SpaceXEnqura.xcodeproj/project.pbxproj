@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		917829252BA57FE400F0B982 /* SpaceXEnquraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917829242BA57FE400F0B982 /* SpaceXEnquraApp.swift */; };
+		917829272BA57FE400F0B982 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917829262BA57FE400F0B982 /* ContentView.swift */; };
+		917829292BA57FE500F0B982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 917829282BA57FE500F0B982 /* Assets.xcassets */; };
+		9178292C2BA57FE500F0B982 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9178292B2BA57FE500F0B982 /* Preview Assets.xcassets */; };
+		917829362BA57FE500F0B982 /* SpaceXEnquraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917829352BA57FE500F0B982 /* SpaceXEnquraTests.swift */; };
+		917829402BA57FE500F0B982 /* SpaceXEnquraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9178293F2BA57FE500F0B982 /* SpaceXEnquraUITests.swift */; };
+		917829422BA57FE500F0B982 /* SpaceXEnquraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917829412BA57FE500F0B982 /* SpaceXEnquraUITestsLaunchTests.swift */; };
+		917829502BA5909A00F0B982 /* FlightInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9178294F2BA5909A00F0B982 /* FlightInfoModel.swift */; };
+		917829552BA61FB400F0B982 /* FlightListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917829542BA61FB400F0B982 /* FlightListController.swift */; };
+		917829572BA6201C00F0B982 /* FlightDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917829562BA6201B00F0B982 /* FlightDetailsController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		917829322BA57FE500F0B982 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 917829192BA57FE400F0B982 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 917829202BA57FE400F0B982;
+			remoteInfo = SpaceXEnqura;
+		};
+		9178293C2BA57FE500F0B982 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 917829192BA57FE400F0B982 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 917829202BA57FE400F0B982;
+			remoteInfo = SpaceXEnqura;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		917829212BA57FE400F0B982 /* SpaceXEnqura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXEnqura.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		917829242BA57FE400F0B982 /* SpaceXEnquraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXEnquraApp.swift; sourceTree = "<group>"; };
+		917829262BA57FE400F0B982 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		917829282BA57FE500F0B982 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9178292B2BA57FE500F0B982 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		917829312BA57FE500F0B982 /* SpaceXEnquraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXEnquraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		917829352BA57FE500F0B982 /* SpaceXEnquraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXEnquraTests.swift; sourceTree = "<group>"; };
+		9178293B2BA57FE500F0B982 /* SpaceXEnquraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXEnquraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9178293F2BA57FE500F0B982 /* SpaceXEnquraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXEnquraUITests.swift; sourceTree = "<group>"; };
+		917829412BA57FE500F0B982 /* SpaceXEnquraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXEnquraUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9178294F2BA5909A00F0B982 /* FlightInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInfoModel.swift; sourceTree = "<group>"; };
+		917829542BA61FB400F0B982 /* FlightListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListController.swift; sourceTree = "<group>"; };
+		917829562BA6201B00F0B982 /* FlightDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9178291E2BA57FE400F0B982 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9178292E2BA57FE500F0B982 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		917829382BA57FE500F0B982 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		917829182BA57FE400F0B982 = {
+			isa = PBXGroup;
+			children = (
+				917829232BA57FE400F0B982 /* SpaceXEnqura */,
+				917829342BA57FE500F0B982 /* SpaceXEnquraTests */,
+				9178293E2BA57FE500F0B982 /* SpaceXEnquraUITests */,
+				917829222BA57FE400F0B982 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		917829222BA57FE400F0B982 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				917829212BA57FE400F0B982 /* SpaceXEnqura.app */,
+				917829312BA57FE500F0B982 /* SpaceXEnquraTests.xctest */,
+				9178293B2BA57FE500F0B982 /* SpaceXEnquraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		917829232BA57FE400F0B982 /* SpaceXEnqura */ = {
+			isa = PBXGroup;
+			children = (
+				917829512BA61F0E00F0B982 /* ViewControllers */,
+				9178294E2BA5908900F0B982 /* Model */,
+				917829242BA57FE400F0B982 /* SpaceXEnquraApp.swift */,
+				917829262BA57FE400F0B982 /* ContentView.swift */,
+				917829282BA57FE500F0B982 /* Assets.xcassets */,
+				9178292A2BA57FE500F0B982 /* Preview Content */,
+			);
+			path = SpaceXEnqura;
+			sourceTree = "<group>";
+		};
+		9178292A2BA57FE500F0B982 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9178292B2BA57FE500F0B982 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		917829342BA57FE500F0B982 /* SpaceXEnquraTests */ = {
+			isa = PBXGroup;
+			children = (
+				917829352BA57FE500F0B982 /* SpaceXEnquraTests.swift */,
+			);
+			path = SpaceXEnquraTests;
+			sourceTree = "<group>";
+		};
+		9178293E2BA57FE500F0B982 /* SpaceXEnquraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9178293F2BA57FE500F0B982 /* SpaceXEnquraUITests.swift */,
+				917829412BA57FE500F0B982 /* SpaceXEnquraUITestsLaunchTests.swift */,
+			);
+			path = SpaceXEnquraUITests;
+			sourceTree = "<group>";
+		};
+		9178294E2BA5908900F0B982 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9178294F2BA5909A00F0B982 /* FlightInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		917829512BA61F0E00F0B982 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				917829542BA61FB400F0B982 /* FlightListController.swift */,
+				917829562BA6201B00F0B982 /* FlightDetailsController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		917829202BA57FE400F0B982 /* SpaceXEnqura */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 917829452BA57FE500F0B982 /* Build configuration list for PBXNativeTarget "SpaceXEnqura" */;
+			buildPhases = (
+				9178291D2BA57FE400F0B982 /* Sources */,
+				9178291E2BA57FE400F0B982 /* Frameworks */,
+				9178291F2BA57FE400F0B982 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpaceXEnqura;
+			productName = SpaceXEnqura;
+			productReference = 917829212BA57FE400F0B982 /* SpaceXEnqura.app */;
+			productType = "com.apple.product-type.application";
+		};
+		917829302BA57FE500F0B982 /* SpaceXEnquraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 917829482BA57FE500F0B982 /* Build configuration list for PBXNativeTarget "SpaceXEnquraTests" */;
+			buildPhases = (
+				9178292D2BA57FE500F0B982 /* Sources */,
+				9178292E2BA57FE500F0B982 /* Frameworks */,
+				9178292F2BA57FE500F0B982 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				917829332BA57FE500F0B982 /* PBXTargetDependency */,
+			);
+			name = SpaceXEnquraTests;
+			productName = SpaceXEnquraTests;
+			productReference = 917829312BA57FE500F0B982 /* SpaceXEnquraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9178293A2BA57FE500F0B982 /* SpaceXEnquraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9178294B2BA57FE500F0B982 /* Build configuration list for PBXNativeTarget "SpaceXEnquraUITests" */;
+			buildPhases = (
+				917829372BA57FE500F0B982 /* Sources */,
+				917829382BA57FE500F0B982 /* Frameworks */,
+				917829392BA57FE500F0B982 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9178293D2BA57FE500F0B982 /* PBXTargetDependency */,
+			);
+			name = SpaceXEnquraUITests;
+			productName = SpaceXEnquraUITests;
+			productReference = 9178293B2BA57FE500F0B982 /* SpaceXEnquraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		917829192BA57FE400F0B982 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					917829202BA57FE400F0B982 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					917829302BA57FE500F0B982 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 917829202BA57FE400F0B982;
+					};
+					9178293A2BA57FE500F0B982 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 917829202BA57FE400F0B982;
+					};
+				};
+			};
+			buildConfigurationList = 9178291C2BA57FE400F0B982 /* Build configuration list for PBXProject "SpaceXEnqura" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 917829182BA57FE400F0B982;
+			productRefGroup = 917829222BA57FE400F0B982 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				917829202BA57FE400F0B982 /* SpaceXEnqura */,
+				917829302BA57FE500F0B982 /* SpaceXEnquraTests */,
+				9178293A2BA57FE500F0B982 /* SpaceXEnquraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9178291F2BA57FE400F0B982 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9178292C2BA57FE500F0B982 /* Preview Assets.xcassets in Resources */,
+				917829292BA57FE500F0B982 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9178292F2BA57FE500F0B982 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		917829392BA57FE500F0B982 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9178291D2BA57FE400F0B982 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				917829272BA57FE400F0B982 /* ContentView.swift in Sources */,
+				917829572BA6201C00F0B982 /* FlightDetailsController.swift in Sources */,
+				917829252BA57FE400F0B982 /* SpaceXEnquraApp.swift in Sources */,
+				917829502BA5909A00F0B982 /* FlightInfoModel.swift in Sources */,
+				917829552BA61FB400F0B982 /* FlightListController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9178292D2BA57FE500F0B982 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				917829362BA57FE500F0B982 /* SpaceXEnquraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		917829372BA57FE500F0B982 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				917829422BA57FE500F0B982 /* SpaceXEnquraUITestsLaunchTests.swift in Sources */,
+				917829402BA57FE500F0B982 /* SpaceXEnquraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		917829332BA57FE500F0B982 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 917829202BA57FE400F0B982 /* SpaceXEnqura */;
+			targetProxy = 917829322BA57FE500F0B982 /* PBXContainerItemProxy */;
+		};
+		9178293D2BA57FE500F0B982 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 917829202BA57FE400F0B982 /* SpaceXEnqura */;
+			targetProxy = 9178293C2BA57FE500F0B982 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		917829432BA57FE500F0B982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		917829442BA57FE500F0B982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		917829462BA57FE500F0B982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpaceXEnqura/Preview Content\"";
+				DEVELOPMENT_TEAM = 3YPP74CF66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BedriDogan.SpaceXEnqura;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		917829472BA57FE500F0B982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpaceXEnqura/Preview Content\"";
+				DEVELOPMENT_TEAM = 3YPP74CF66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BedriDogan.SpaceXEnqura;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		917829492BA57FE500F0B982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3YPP74CF66;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BedriDogan.SpaceXEnquraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceXEnqura.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpaceXEnqura";
+			};
+			name = Debug;
+		};
+		9178294A2BA57FE500F0B982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3YPP74CF66;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BedriDogan.SpaceXEnquraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceXEnqura.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpaceXEnqura";
+			};
+			name = Release;
+		};
+		9178294C2BA57FE500F0B982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3YPP74CF66;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BedriDogan.SpaceXEnquraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpaceXEnqura;
+			};
+			name = Debug;
+		};
+		9178294D2BA57FE500F0B982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3YPP74CF66;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BedriDogan.SpaceXEnquraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpaceXEnqura;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9178291C2BA57FE400F0B982 /* Build configuration list for PBXProject "SpaceXEnqura" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				917829432BA57FE500F0B982 /* Debug */,
+				917829442BA57FE500F0B982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		917829452BA57FE500F0B982 /* Build configuration list for PBXNativeTarget "SpaceXEnqura" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				917829462BA57FE500F0B982 /* Debug */,
+				917829472BA57FE500F0B982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		917829482BA57FE500F0B982 /* Build configuration list for PBXNativeTarget "SpaceXEnquraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				917829492BA57FE500F0B982 /* Debug */,
+				9178294A2BA57FE500F0B982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9178294B2BA57FE500F0B982 /* Build configuration list for PBXNativeTarget "SpaceXEnquraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9178294C2BA57FE500F0B982 /* Debug */,
+				9178294D2BA57FE500F0B982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 917829192BA57FE400F0B982 /* Project object */;
+}
