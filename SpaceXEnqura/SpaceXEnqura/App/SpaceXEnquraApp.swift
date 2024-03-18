@@ -11,7 +11,7 @@ import SwiftUI
 struct SpaceXEnquraApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FlightListController()
         }
     }
 }

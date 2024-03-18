@@ -6,14 +6,43 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct FlightListController: View {
+    
+    @ObservedObject var launchVM =  LaunchesViewModel()
+    //    @State private var launches: [FlightInfoModel] = []
+    
     var body: some View {
         NavigationView {
-            List(posts) { post in
-                Text(post.title)
+//            List(launchVM.launches) { launch in
+//                VStack(alignment: .leading) {
+//                    if let imageData = launch.links?.article {
+//                        KFImage(URL(string: imageData))
+//                            .resizable()
+//                            .scaledToFit()
+//                            .frame(width: 24, height: 24)
+////                            .aspectRatio(contentMode: .fit)
+////                        Image(uiImage: image)
+////                            .resizable()
+////                            .aspectRatio(contentMode: .fit)
+////                            .frame(width: 24, height: 24)
+//                    }
+//                    Text(launch.name ?? "")
+////                    Text(launch.name ?? "")
+////                    Text(launch.dateUTC)
+//                }
+//            }
+        }
+        .onAppear {
+            DispatchQueue.main.async {
+                self.launchVM.fetchLaunches()
+                self.launchVM.didSuccess = {
+                    print("başarılı")
+                }
             }
-            .navigationTitle("Launches")
+            
+
         }
     }
 }
@@ -25,13 +54,10 @@ struct Post: Identifiable {
     let title: String
 }
 
-let posts = [
-    Post(id: "1", title: "Deneme"),
-    Post(id: "2", title: "Bedri"),
-    Post(id: "3", title: "Ritsa")
-]
 
 
-#Preview {
-    FlightListController()
+struct FlightListController_Previews: PreviewProvider {
+    static var previews: some View {
+        FlightListController()
+    }
 }

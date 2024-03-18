@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		917829252BA57FE400F0B982 /* SpaceXEnquraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917829242BA57FE400F0B982 /* SpaceXEnquraApp.swift */; };
-		917829272BA57FE400F0B982 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917829262BA57FE400F0B982 /* ContentView.swift */; };
 		917829292BA57FE500F0B982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 917829282BA57FE500F0B982 /* Assets.xcassets */; };
 		9178292C2BA57FE500F0B982 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9178292B2BA57FE500F0B982 /* Preview Assets.xcassets */; };
 		917829362BA57FE500F0B982 /* SpaceXEnquraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917829352BA57FE500F0B982 /* SpaceXEnquraTests.swift */; };
@@ -17,6 +16,14 @@
 		917829502BA5909A00F0B982 /* FlightInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9178294F2BA5909A00F0B982 /* FlightInfoModel.swift */; };
 		917829552BA61FB400F0B982 /* FlightListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917829542BA61FB400F0B982 /* FlightListController.swift */; };
 		917829572BA6201C00F0B982 /* FlightDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917829562BA6201B00F0B982 /* FlightDetailsController.swift */; };
+		9178295D2BA6EA5B00F0B982 /* LaunchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9178295C2BA6EA5B00F0B982 /* LaunchesViewModel.swift */; };
+		917829612BA6EA8900F0B982 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917829602BA6EA8900F0B982 /* NetworkManager.swift */; };
+		917829642BA6EC2000F0B982 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 917829632BA6EC2000F0B982 /* Alamofire */; };
+		917829662BA6EC2000F0B982 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 917829652BA6EC2000F0B982 /* AlamofireDynamic */; };
+		917829682BA6EEA800F0B982 /* CreateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917829672BA6EEA800F0B982 /* CreateRequest.swift */; };
+		9178296A2BA6EEF000F0B982 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917829692BA6EEF000F0B982 /* NetworkManagerProtocol.swift */; };
+		9178296D2BA7005200F0B982 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9178296C2BA7005200F0B982 /* Kingfisher */; };
+		917829702BA700A000F0B982 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9178296F2BA700A000F0B982 /* UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +46,6 @@
 /* Begin PBXFileReference section */
 		917829212BA57FE400F0B982 /* SpaceXEnqura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXEnqura.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		917829242BA57FE400F0B982 /* SpaceXEnquraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXEnquraApp.swift; sourceTree = "<group>"; };
-		917829262BA57FE400F0B982 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		917829282BA57FE500F0B982 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9178292B2BA57FE500F0B982 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		917829312BA57FE500F0B982 /* SpaceXEnquraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXEnquraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +56,11 @@
 		9178294F2BA5909A00F0B982 /* FlightInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInfoModel.swift; sourceTree = "<group>"; };
 		917829542BA61FB400F0B982 /* FlightListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListController.swift; sourceTree = "<group>"; };
 		917829562BA6201B00F0B982 /* FlightDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsController.swift; sourceTree = "<group>"; };
+		9178295C2BA6EA5B00F0B982 /* LaunchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewModel.swift; sourceTree = "<group>"; };
+		917829602BA6EA8900F0B982 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		917829672BA6EEA800F0B982 /* CreateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRequest.swift; sourceTree = "<group>"; };
+		917829692BA6EEF000F0B982 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		9178296F2BA700A000F0B982 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9178296D2BA7005200F0B982 /* Kingfisher in Frameworks */,
+				917829642BA6EC2000F0B982 /* Alamofire in Frameworks */,
+				917829662BA6EC2000F0B982 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,10 +114,12 @@
 		917829232BA57FE400F0B982 /* SpaceXEnqura */ = {
 			isa = PBXGroup;
 			children = (
+				9178296E2BA7008E00F0B982 /* Extension */,
+				9178295B2BA6EA4900F0B982 /* ViewModel */,
+				9178295A2BA6EA3E00F0B982 /* NetworkManager */,
+				917829592BA6EA3700F0B982 /* App */,
 				917829512BA61F0E00F0B982 /* ViewControllers */,
 				9178294E2BA5908900F0B982 /* Model */,
-				917829242BA57FE400F0B982 /* SpaceXEnquraApp.swift */,
-				917829262BA57FE400F0B982 /* ContentView.swift */,
 				917829282BA57FE500F0B982 /* Assets.xcassets */,
 				9178292A2BA57FE500F0B982 /* Preview Content */,
 			);
@@ -152,6 +168,40 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		917829592BA6EA3700F0B982 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				917829242BA57FE400F0B982 /* SpaceXEnquraApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9178295A2BA6EA3E00F0B982 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				917829602BA6EA8900F0B982 /* NetworkManager.swift */,
+				917829672BA6EEA800F0B982 /* CreateRequest.swift */,
+				917829692BA6EEF000F0B982 /* NetworkManagerProtocol.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		9178295B2BA6EA4900F0B982 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9178295C2BA6EA5B00F0B982 /* LaunchesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9178296E2BA7008E00F0B982 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9178296F2BA700A000F0B982 /* UIImageView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,6 +218,11 @@
 			dependencies = (
 			);
 			name = SpaceXEnqura;
+			packageProductDependencies = (
+				917829632BA6EC2000F0B982 /* Alamofire */,
+				917829652BA6EC2000F0B982 /* AlamofireDynamic */,
+				9178296C2BA7005200F0B982 /* Kingfisher */,
+			);
 			productName = SpaceXEnqura;
 			productReference = 917829212BA57FE400F0B982 /* SpaceXEnqura.app */;
 			productType = "com.apple.product-type.application";
@@ -240,6 +295,10 @@
 				Base,
 			);
 			mainGroup = 917829182BA57FE400F0B982;
+			packageReferences = (
+				917829622BA6EC2000F0B982 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9178296B2BA7005200F0B982 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 917829222BA57FE400F0B982 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -282,10 +341,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				917829272BA57FE400F0B982 /* ContentView.swift in Sources */,
+				917829612BA6EA8900F0B982 /* NetworkManager.swift in Sources */,
+				917829702BA700A000F0B982 /* UIImageView.swift in Sources */,
 				917829572BA6201C00F0B982 /* FlightDetailsController.swift in Sources */,
+				917829682BA6EEA800F0B982 /* CreateRequest.swift in Sources */,
 				917829252BA57FE400F0B982 /* SpaceXEnquraApp.swift in Sources */,
+				9178295D2BA6EA5B00F0B982 /* LaunchesViewModel.swift in Sources */,
 				917829502BA5909A00F0B982 /* FlightInfoModel.swift in Sources */,
+				9178296A2BA6EEF000F0B982 /* NetworkManagerProtocol.swift in Sources */,
 				917829552BA61FB400F0B982 /* FlightListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +515,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SpaceXEnqura/Preview Content\"";
 				DEVELOPMENT_TEAM = 3YPP74CF66;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -486,6 +550,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SpaceXEnqura/Preview Content\"";
 				DEVELOPMENT_TEAM = 3YPP74CF66;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -626,6 +691,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		917829622BA6EC2000F0B982 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
+		9178296B2BA7005200F0B982 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		917829632BA6EC2000F0B982 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 917829622BA6EC2000F0B982 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		917829652BA6EC2000F0B982 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 917829622BA6EC2000F0B982 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+		9178296C2BA7005200F0B982 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9178296B2BA7005200F0B982 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 917829192BA57FE400F0B982 /* Project object */;
 }
