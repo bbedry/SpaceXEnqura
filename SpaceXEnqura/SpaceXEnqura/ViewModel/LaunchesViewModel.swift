@@ -9,6 +9,7 @@ import Foundation
 
 protocol LaunchesViewModelProtocol {
     func fetchLaunches()
+    func sortLaunchesByDate()
 }
 
 class LaunchesViewModel: LaunchesViewModelProtocol, ObservableObject {
@@ -34,4 +35,23 @@ class LaunchesViewModel: LaunchesViewModelProtocol, ObservableObject {
             }
         })
     }
-}
+    
+    func sortLaunchesByDate() {
+        let dateFormatter = DateFormatter()
+           dateFormatter.dateFormat = "yyyy-MM-dd" // SpaceX API'den gelen tarih formatına uygun olmalı
+           
+        
+           launches.sort { (launch1, launch2) in
+               guard let date1String = launch1.dateLocal,
+                     let date2String = launch2.dateLocal,
+                     let date1 = dateFormatter.date(from: date1String),
+                     let date2 = dateFormatter.date(from: date2String) else {
+                   
+                   return false
+               }
+            
+               return date1 > date2
+           }
+       }
+    }
+

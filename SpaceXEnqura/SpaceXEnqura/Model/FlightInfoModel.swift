@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct FlightInfoModel: Codable, Identifiable {
+struct FlightInfoModel: Codable, Identifiable, Hashable {
     var objectId: String? {
         return id
     }
@@ -45,7 +45,7 @@ struct FlightInfoModel: Codable, Identifiable {
       }
 }
 
-struct Fairings: Codable {
+struct Fairings: Codable, Hashable {
     var reused, recoveryAttempt, recovered: Bool?
 
     enum CodingKeys: String, CodingKey {
@@ -56,7 +56,8 @@ struct Fairings: Codable {
 }
 
 // MARK: - Links
-struct Links: Codable {
+struct Links: Codable, Hashable {
+    var patch: Patch?
     var webcast: String?
     var youtubeID: String?
     var article: String?
@@ -66,11 +67,15 @@ struct Links: Codable {
         case webcast
         case youtubeID = "youtube_id"
         case article, wikipedia
+        case patch
     }
 }
 
+struct Patch: Codable, Hashable {
+    var small, large: String?
+}
 // MARK: - Core
-struct Core: Codable {
+struct Core: Codable, Hashable {
     var core: String?
     var flight: Int?
     var gridfins, legs, reused, landingAttempt: Bool?
