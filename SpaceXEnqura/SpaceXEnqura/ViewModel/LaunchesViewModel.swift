@@ -38,20 +38,23 @@ class LaunchesViewModel: LaunchesViewModelProtocol, ObservableObject {
     
     func sortLaunchesByDate() {
         let dateFormatter = DateFormatter()
-           dateFormatter.dateFormat = "yyyy-MM-dd" // SpaceX API'den gelen tarih formatına uygun olmalı
-           
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         
-           launches.sort { (launch1, launch2) in
-               guard let date1String = launch1.dateLocal,
-                     let date2String = launch2.dateLocal,
-                     let date1 = dateFormatter.date(from: date1String),
-                     let date2 = dateFormatter.date(from: date2String) else {
-                   
-                   return false
-               }
+        launches.sort { (launch1, launch2) in
+            guard let date1String = launch1.dateLocal,
+                  let date2String = launch2.dateLocal else {
+                print("Date string is nil")
+                return false
+            }
             
-               return date1 > date2
-           }
-       }
+            guard let date1 = dateFormatter.date(from: date1String),
+                  let date2 = dateFormatter.date(from: date2String) else {
+                print("Failed to parse date")
+                return false
+            }
+            
+            return date1 > date2
+        }
+        
     }
-
+}

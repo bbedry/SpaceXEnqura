@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910A37F82BA86E8B00B46D2C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A37F72BA86E8B00B46D2C /* String.swift */; };
 		917829252BA57FE400F0B982 /* SpaceXEnquraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917829242BA57FE400F0B982 /* SpaceXEnquraApp.swift */; };
 		917829292BA57FE500F0B982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 917829282BA57FE500F0B982 /* Assets.xcassets */; };
 		9178292C2BA57FE500F0B982 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9178292B2BA57FE500F0B982 /* Preview Assets.xcassets */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		910A37F72BA86E8B00B46D2C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		917829212BA57FE400F0B982 /* SpaceXEnqura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXEnqura.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		917829242BA57FE400F0B982 /* SpaceXEnquraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXEnquraApp.swift; sourceTree = "<group>"; };
 		917829282BA57FE500F0B982 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				9178296F2BA700A000F0B982 /* UIImageView.swift */,
+				910A37F72BA86E8B00B46D2C /* String.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			files = (
 				917829612BA6EA8900F0B982 /* NetworkManager.swift in Sources */,
 				917829702BA700A000F0B982 /* UIImageView.swift in Sources */,
+				910A37F82BA86E8B00B46D2C /* String.swift in Sources */,
 				917829572BA6201C00F0B982 /* FlightDetailsController.swift in Sources */,
 				917829682BA6EEA800F0B982 /* CreateRequest.swift in Sources */,
 				917829252BA57FE400F0B982 /* SpaceXEnquraApp.swift in Sources */,
