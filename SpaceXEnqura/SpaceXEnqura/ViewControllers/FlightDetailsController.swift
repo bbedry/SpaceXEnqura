@@ -65,53 +65,28 @@ struct FlightDetailsController: View {
                 }
             }
             .padding(.leading, 8)
+            .padding(.trailing, 8)
+            .padding(.bottom, 32)
             
-            if let details = flightInfo?.details, !details.isEmpty {
-                Text("Flight Details:")
-                    .font(.title2)
-                    .foregroundColor(.black)
-                    .padding(.top)
-                    .padding(.leading, 8)
-                    Spacer()
-                Text(details)
-                    .font(.system(size: 14))
-                    .foregroundColor(.gray)
-                    .multilineTextAlignment(.leading)
-                    .padding(.leading, 8)
+            VStack(alignment: .leading, spacing: 16) {
+                if let details = flightInfo?.details, !details.isEmpty {
+                    Text("Flight Details:")
+                        .font(.title2)
+                        .foregroundColor(.black)
+                        .padding(.top)
+                        .padding(.leading, 8)
+                        .padding(.bottom, 16)
+                    Text(details)
+                        .font(.system(size: 14))
+                        .foregroundColor(.gray)
+                        .multilineTextAlignment(.leading)
+                        .padding(.leading, 8)
+                        .padding(.trailing, 8)
+                }
             }
-           
         }
         .navigationTitle("Launch Details")
-         .navigationBarTitleDisplayMode(.inline)
-        
-        
-//        
-//        NavigationView {
-//            VStack(spacing: 8) {
-//                ZStack() {
-//                    
-//
-//                }
-//                .frame(height: 360)
-//                .padding(.leading, 8)
-//                .padding(.trailing, 8)
-//                
-//                VStack(alignment: .leading, spacing: 8) {
-//                    HStack {
-//                       
-//                     
-//                    }
-//                    
-//                 
-//                    
-//            
-//                }
-//                .padding(.top, 60)
-//            }
-//            
-//        }
-      
-//        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
