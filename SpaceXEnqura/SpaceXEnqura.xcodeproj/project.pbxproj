@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910965072BA9B26C0066C1D0 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910965062BA9B26C0066C1D0 /* WebViewModel.swift */; };
+		910965092BA9C74D0066C1D0 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910965082BA9C74D0066C1D0 /* VideoPlayerView.swift */; };
+		9109650C2BA9C7F00066C1D0 /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9109650B2BA9C7F00066C1D0 /* CircleProgressView.swift */; };
 		910A37F82BA86E8B00B46D2C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A37F72BA86E8B00B46D2C /* String.swift */; };
 		917829252BA57FE400F0B982 /* SpaceXEnquraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917829242BA57FE400F0B982 /* SpaceXEnquraApp.swift */; };
 		917829292BA57FE500F0B982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 917829282BA57FE500F0B982 /* Assets.xcassets */; };
@@ -24,7 +27,6 @@
 		917829682BA6EEA800F0B982 /* CreateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917829672BA6EEA800F0B982 /* CreateRequest.swift */; };
 		9178296A2BA6EEF000F0B982 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917829692BA6EEF000F0B982 /* NetworkManagerProtocol.swift */; };
 		9178296D2BA7005200F0B982 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9178296C2BA7005200F0B982 /* Kingfisher */; };
-		917829702BA700A000F0B982 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9178296F2BA700A000F0B982 /* UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		910965062BA9B26C0066C1D0 /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
+		910965082BA9C74D0066C1D0 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		9109650B2BA9C7F00066C1D0 /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
 		910A37F72BA86E8B00B46D2C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		917829212BA57FE400F0B982 /* SpaceXEnqura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXEnqura.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		917829242BA57FE400F0B982 /* SpaceXEnquraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXEnquraApp.swift; sourceTree = "<group>"; };
@@ -62,7 +67,6 @@
 		917829602BA6EA8900F0B982 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		917829672BA6EEA800F0B982 /* CreateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRequest.swift; sourceTree = "<group>"; };
 		917829692BA6EEF000F0B982 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
-		9178296F2BA700A000F0B982 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9109650A2BA9C7520066C1D0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				910965082BA9C74D0066C1D0 /* VideoPlayerView.swift */,
+				9109650B2BA9C7F00066C1D0 /* CircleProgressView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		917829182BA57FE400F0B982 = {
 			isa = PBXGroup;
 			children = (
@@ -116,12 +129,12 @@
 		917829232BA57FE400F0B982 /* SpaceXEnqura */ = {
 			isa = PBXGroup;
 			children = (
-				9178296E2BA7008E00F0B982 /* Extension */,
-				9178295B2BA6EA4900F0B982 /* ViewModel */,
-				9178295A2BA6EA3E00F0B982 /* NetworkManager */,
 				917829592BA6EA3700F0B982 /* App */,
-				917829512BA61F0E00F0B982 /* ViewControllers */,
+				9178295A2BA6EA3E00F0B982 /* NetworkManager */,
 				9178294E2BA5908900F0B982 /* Model */,
+				9178295B2BA6EA4900F0B982 /* ViewModel */,
+				917829512BA61F0E00F0B982 /* ViewControllers */,
+				9178296E2BA7008E00F0B982 /* Extension */,
 				917829282BA57FE500F0B982 /* Assets.xcassets */,
 				9178292A2BA57FE500F0B982 /* Preview Content */,
 			);
@@ -164,6 +177,7 @@
 		917829512BA61F0E00F0B982 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9109650A2BA9C7520066C1D0 /* Views */,
 				917829542BA61FB400F0B982 /* FlightListController.swift */,
 				917829562BA6201B00F0B982 /* FlightDetailsController.swift */,
 			);
@@ -192,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				9178295C2BA6EA5B00F0B982 /* LaunchesViewModel.swift */,
+				910965062BA9B26C0066C1D0 /* WebViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -199,7 +214,6 @@
 		9178296E2BA7008E00F0B982 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				9178296F2BA700A000F0B982 /* UIImageView.swift */,
 				910A37F72BA86E8B00B46D2C /* String.swift */,
 			);
 			path = Extension;
@@ -345,15 +359,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				917829612BA6EA8900F0B982 /* NetworkManager.swift in Sources */,
-				917829702BA700A000F0B982 /* UIImageView.swift in Sources */,
 				910A37F82BA86E8B00B46D2C /* String.swift in Sources */,
 				917829572BA6201C00F0B982 /* FlightDetailsController.swift in Sources */,
+				9109650C2BA9C7F00066C1D0 /* CircleProgressView.swift in Sources */,
 				917829682BA6EEA800F0B982 /* CreateRequest.swift in Sources */,
 				917829252BA57FE400F0B982 /* SpaceXEnquraApp.swift in Sources */,
 				9178295D2BA6EA5B00F0B982 /* LaunchesViewModel.swift in Sources */,
+				910965072BA9B26C0066C1D0 /* WebViewModel.swift in Sources */,
 				917829502BA5909A00F0B982 /* FlightInfoModel.swift in Sources */,
 				9178296A2BA6EEF000F0B982 /* NetworkManagerProtocol.swift in Sources */,
 				917829552BA61FB400F0B982 /* FlightListController.swift in Sources */,
+				910965092BA9C74D0066C1D0 /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

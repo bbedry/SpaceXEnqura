@@ -14,10 +14,13 @@ struct FlightInfoModel: Codable, Identifiable, Hashable {
     }
     var fairings: Fairings?
     var links: Links?
+    var staticFireDateUTC: String?
     var net: Bool?
     var window: Int?
     var rocket: String?
     var success: Bool?
+    var filures: [Failures]?
+    var details: String?
     var launchpad: String?
     var flightNumber: Int?
     var name, dateUTC: String?
@@ -31,7 +34,8 @@ struct FlightInfoModel: Codable, Identifiable, Hashable {
     
     enum CodingKeys: String, CodingKey {
           case fairings, links
-          case net, window, rocket, success, launchpad
+          case staticFireDateUTC = "static_fire_date_utc"
+          case net, window, rocket, success, launchpad, details
           case flightNumber = "flight_number"
           case name
           case dateUTC = "date_utc"
@@ -73,6 +77,11 @@ struct Links: Codable, Hashable {
 
 struct Patch: Codable, Hashable {
     var small, large: String?
+}
+
+struct Failures: Codable, Hashable {
+    var time: Int?
+    var reason: String?
 }
 // MARK: - Core
 struct Core: Codable, Hashable {

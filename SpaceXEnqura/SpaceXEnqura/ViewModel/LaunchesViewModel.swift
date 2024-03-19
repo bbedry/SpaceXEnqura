@@ -43,13 +43,13 @@ class LaunchesViewModel: LaunchesViewModelProtocol, ObservableObject {
         launches.sort { (launch1, launch2) in
             guard let date1String = launch1.dateLocal,
                   let date2String = launch2.dateLocal else {
-                print("Date string is nil")
+               
                 return false
             }
             
             guard let date1 = dateFormatter.date(from: date1String),
                   let date2 = dateFormatter.date(from: date2String) else {
-                print("Failed to parse date")
+            
                 return false
             }
             
