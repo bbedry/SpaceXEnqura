@@ -84,7 +84,7 @@ struct FlightDetailsController: View {
                         .padding(.leading, 8)
                         .padding(.bottom, 8)
                     Text(details)
-                        .font(.system(size: 14))
+                        .font(.system(size: 16))
                         .foregroundColor(.gray)
                         .multilineTextAlignment(.leading)
                         .padding(.leading, 16)
