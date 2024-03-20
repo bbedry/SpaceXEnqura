@@ -11,13 +11,11 @@ import SafariServices
 struct SafariView: UIViewControllerRepresentable {
     typealias UIViewControllerType = SFSafariViewController
     
-    var vm: SafariViewModel
-    init(vm: SafariViewModel) {
-        self.vm = vm
-    }
+    let url: URL
     
     func makeUIViewController(context: Context) -> SFSafariViewController {
-        return vm.webView
+        let vc = SFSafariViewController(url: url)
+        return vc
     }
     
     func updateUIViewController(_ uiViewController: SFSafariViewController, context: Context) {

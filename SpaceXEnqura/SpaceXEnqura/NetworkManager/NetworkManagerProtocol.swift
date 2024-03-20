@@ -14,7 +14,7 @@ protocol NetworkServiceProtocol {
 
 struct NetworkService: NetworkServiceProtocol {
     func getLaunches(completionHandler: @escaping ResultHandler<LaunchModel>) {
-        let finalRequest = PrepareNetworkRequest.getFeed(())
+        let finalRequest = PrepareNetworkRequest.getLaunches(())
         NetworkManager.shared.request(finalRequest, decodeToType: [LaunchModel].self, completionHandler: completionHandler)
     }
     

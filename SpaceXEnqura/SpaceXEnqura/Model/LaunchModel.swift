@@ -83,7 +83,7 @@ struct Failures: Codable, Hashable {
     var time: Int?
     var reason: String?
 }
-// MARK: - Core
+
 struct Core: Codable, Hashable {
     var core: String?
     var flight: Int?

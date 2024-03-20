@@ -14,6 +14,7 @@ struct FlightDetailsController: View {
     
     var flightInfo: LaunchModel?
     
+    @State private var isActive = false
     @State private var isSafariViewPresented = false
     @State private var safariURL: String?
     @State var showsAlert = false
@@ -21,8 +22,10 @@ struct FlightDetailsController: View {
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack {
+        
                 if let videoId = flightInfo?.links?.youtubeID {
                     let viewModel = WebViewModel(youtubeId: videoId)
+                    
                     WebViewContainer(webViewModel: viewModel)
                         .frame(height: 360)
                         .padding(.top, 20)
@@ -88,31 +91,34 @@ struct FlightDetailsController: View {
                         .padding(.trailing, 16)
                         .frame(alignment: .center)
                 }
+                Spacer()
                 
-                Button("Read on Safari") {
-                    if let article = flightInfo?.links?.article {
-                        safariURL = article
+                VStack(alignment: .center) {
+                    Button("Read on Safari") {
+                    
+                        if ((flightInfo?.links?.article) == nil) && flightInfo?.links?.wikipedia == nil {
+                            self.showsAlert.toggle()
+                        }
                         isSafariViewPresented = true
-                    } else if let wiki = flightInfo?.links?.wikipedia {
-                        safariURL = wiki
-                        isSafariViewPresented = true
-                    } else {
-                        self.showsAlert.toggle()
-                            
                     }
-                    
-                }
-                
-                .sheet(isPresented: $isSafariViewPresented) {
-                    SafariView(vm: SafariViewModel(url: safariURL ?? ""))
-                    
-                }
-                .alert(isPresented: $showsAlert) {
-                    Alert(title: Text("Error"), message: Text("No found Article or Wikipedia source."), dismissButton: .default(Text("OK")))
-                }
-                
+                   
+                    .padding(.leading, 16)
+                    .sheet(isPresented: $isSafariViewPresented) {
+                        if let article = flightInfo?.links?.article, let url = URL(string: article) {
+                            SafariView(url: url)
+                            
+                        } else if let wiki = flightInfo?.links?.wikipedia, let url = URL(string: wiki) {
+                            SafariView(url: url)
+                        }
+
+                    }
+                    .alert(isPresented: $showsAlert) {
+                        Alert(title: Text("Error"), message: Text("No found Article or Wikipedia source."), dismissButton: .default(Text("OK")))
+                    }
+                } 
+                .frame(maxWidth: .infinity)
+               
             }
- 
         }
         .navigationTitle("Launch Details")
         .navigationBarTitleDisplayMode(.inline)

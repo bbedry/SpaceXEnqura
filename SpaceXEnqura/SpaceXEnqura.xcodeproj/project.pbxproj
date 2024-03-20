@@ -11,7 +11,6 @@
 		910965092BA9C74D0066C1D0 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910965082BA9C74D0066C1D0 /* VideoPlayerView.swift */; };
 		9109650C2BA9C7F00066C1D0 /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9109650B2BA9C7F00066C1D0 /* CircleProgressView.swift */; };
 		9109650E2BAA37B90066C1D0 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9109650D2BAA37B90066C1D0 /* SafariView.swift */; };
-		910965102BAA42B50066C1D0 /* SafariViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9109650F2BAA42B50066C1D0 /* SafariViewModel.swift */; };
 		910A37F82BA86E8B00B46D2C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A37F72BA86E8B00B46D2C /* String.swift */; };
 		917829252BA57FE400F0B982 /* SpaceXEnquraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917829242BA57FE400F0B982 /* SpaceXEnquraApp.swift */; };
 		917829292BA57FE500F0B982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 917829282BA57FE500F0B982 /* Assets.xcassets */; };
@@ -54,7 +53,6 @@
 		910965082BA9C74D0066C1D0 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		9109650B2BA9C7F00066C1D0 /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
 		9109650D2BAA37B90066C1D0 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
-		9109650F2BAA42B50066C1D0 /* SafariViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewModel.swift; sourceTree = "<group>"; };
 		910A37F72BA86E8B00B46D2C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		917829212BA57FE400F0B982 /* SpaceXEnqura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXEnqura.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		917829242BA57FE400F0B982 /* SpaceXEnquraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXEnquraApp.swift; sourceTree = "<group>"; };
@@ -106,10 +104,10 @@
 		9109650A2BA9C7520066C1D0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				91EBEC1B2BAB3F46006DCC52 /* SafariView */,
+				91EBEC152BAB2B72006DCC52 /* ListItemView */,
 				91EBEC1A2BAB3F3B006DCC52 /* CircleProgressView */,
 				91EBEC192BAB3F30006DCC52 /* VideoPlayerView */,
-				91EBEC152BAB2B72006DCC52 /* ListItemView */,
+				91EBEC1B2BAB3F46006DCC52 /* SafariView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,7 +212,6 @@
 			children = (
 				9178295C2BA6EA5B00F0B982 /* LaunchesViewModel.swift */,
 				910965062BA9B26C0066C1D0 /* WebViewModel.swift */,
-				9109650F2BAA42B50066C1D0 /* SafariViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -407,7 +404,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				910965102BAA42B50066C1D0 /* SafariViewModel.swift in Sources */,
 				91EBEC172BAB2B87006DCC52 /* ListItemView.swift in Sources */,
 				917829612BA6EA8900F0B982 /* NetworkManager.swift in Sources */,
 				910A37F82BA86E8B00B46D2C /* String.swift in Sources */,

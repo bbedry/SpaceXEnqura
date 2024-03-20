@@ -35,21 +35,19 @@ final class NetworkManager {
                         completionHandler(.failure(.decodeError(error)))
                     }
                 case .failure(let error):
-                   
                     completionHandler(.failure(.networkError(error)))
                 }
             }
             
         }
-        
-      }
+    }
 }
 
 
 enum NetworkError: Error {
     case networkError(Error)
     case decodeError(Error)
-
+    
     var localizedDescription: String {
         switch self {
         case .networkError:

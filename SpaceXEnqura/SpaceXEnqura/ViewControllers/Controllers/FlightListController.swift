@@ -11,6 +11,8 @@ import Kingfisher
 struct FlightListController: View {
     
     @ObservedObject var launchVM =  LaunchesViewModel()
+    
+    
     @State private var isLoading = false
     @State private var progress: CGFloat = 0.0
     @State private var selectedFlight: LaunchModel? = nil
@@ -26,7 +28,7 @@ struct FlightListController: View {
             } else {
                 List(launchVM.launches) { flightInfo in
                     NavigationLink(destination: FlightDetailsController(flightInfo: flightInfo)) {
-                        FlightListItemView(flightInfo: flightInfo)
+                        ListItemView(flightInfo: flightInfo)
                     }
                     .onAppear(perform: {
                         self.selectedFlight = flightInfo
@@ -36,7 +38,6 @@ struct FlightListController: View {
                 .navigationTitle("Launches")
             }
         }
-       
         .alert(isPresented: $showsAlert) {
             Alert(title: Text("Error"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
         }
@@ -71,9 +72,7 @@ struct FlightListController: View {
                     isFoundData = true
                 }
             }
-            
         }
-        
     }
 }
 

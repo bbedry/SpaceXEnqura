@@ -8,10 +8,9 @@
 import Foundation
 import Alamofire
 
-
 enum PrepareNetworkRequest: URLRequestConvertible {
   
-    case getFeed(Void)
+    case getLaunches(Void)
     
     var baseURL: URL {
         return URL(string: "https://api.spacexdata.com/v4")!
@@ -19,14 +18,14 @@ enum PrepareNetworkRequest: URLRequestConvertible {
     
     var method: HTTPMethod {
         switch self {
-        case .getFeed:
+        case .getLaunches:
             return .get
         }
     }
     
     var path: String {
         switch self {
-        case .getFeed:
+        case .getLaunches:
             return "/launches"
         }
     }
@@ -40,5 +39,4 @@ enum PrepareNetworkRequest: URLRequestConvertible {
         return try encoding.encode(urlRequest, with: [:])
         
     }
-    
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 import Kingfisher
 
-struct FlightListItemView: View {
+struct ListItemView: View {
     let flightInfo: LaunchModel
     
     var body: some View {
