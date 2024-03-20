@@ -8,13 +8,17 @@
 import SwiftUI
 import WebKit
 import Kingfisher
+import SafariServices
 
 struct FlightDetailsController: View {
-    var flightInfo: FlightInfoModel?
+    
+    var flightInfo: LaunchModel?
+    
+    @State private var isSafariViewPresented = false
+    @State private var safariURL: String?
+    @State var showsAlert = false
     
     var body: some View {
-        
-        
         ScrollView(showsIndicators: false) {
             VStack {
                 if let videoId = flightInfo?.links?.youtubeID {
@@ -44,7 +48,7 @@ struct FlightDetailsController: View {
             
             VStack(alignment: .leading, spacing: 16 ) {
                 HStack {
-                    Text("Flight Name:")
+                    Text("Launch Name:")
                         .font(.title2)
                         .foregroundColor(.black)
                     Text("\(flightInfo?.name ?? "No launch name")")
@@ -70,20 +74,45 @@ struct FlightDetailsController: View {
             
             VStack(alignment: .leading, spacing: 16) {
                 if let details = flightInfo?.details, !details.isEmpty {
-                    Text("Flight Details:")
+                    Text("About Launch")
                         .font(.title2)
                         .foregroundColor(.black)
                         .padding(.top)
                         .padding(.leading, 8)
-                        .padding(.bottom, 16)
+                        .padding(.bottom, 8)
                     Text(details)
                         .font(.system(size: 14))
                         .foregroundColor(.gray)
                         .multilineTextAlignment(.leading)
-                        .padding(.leading, 8)
-                        .padding(.trailing, 8)
+                        .padding(.leading, 16)
+                        .padding(.trailing, 16)
+                        .frame(alignment: .center)
                 }
+                
+                Button("Read on Safari") {
+                    if let article = flightInfo?.links?.article {
+                        safariURL = article
+                        isSafariViewPresented = true
+                    } else if let wiki = flightInfo?.links?.wikipedia {
+                        safariURL = wiki
+                        isSafariViewPresented = true
+                    } else {
+                        self.showsAlert.toggle()
+                            
+                    }
+                    
+                }
+                
+                .sheet(isPresented: $isSafariViewPresented) {
+                    SafariView(vm: SafariViewModel(url: safariURL ?? ""))
+                    
+                }
+                .alert(isPresented: $showsAlert) {
+                    Alert(title: Text("Error"), message: Text("No found Article or Wikipedia source."), dismissButton: .default(Text("OK")))
+                }
+                
             }
+ 
         }
         .navigationTitle("Launch Details")
         .navigationBarTitleDisplayMode(.inline)
@@ -95,5 +124,3 @@ struct FlightListDetailController_Previews: PreviewProvider {
         FlightDetailsController()
     }
 }
-
-

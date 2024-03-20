@@ -1,5 +1,5 @@
 //
-//  FlightInfoModel.swift
+//  LaunchModel.swift
 //  SpaceXEnqura
 //
 //  Created by Bedri Doğan on 16.03.2024.
@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct FlightInfoModel: Codable, Identifiable, Hashable {
+struct LaunchModel: Codable, Identifiable, Hashable {
     var objectId: String? {
         return id
     }

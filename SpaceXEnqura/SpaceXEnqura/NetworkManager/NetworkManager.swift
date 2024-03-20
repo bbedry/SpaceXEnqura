@@ -19,34 +19,43 @@ final class NetworkManager {
     }()
     
     func request<T: Codable>(_ request: URLRequestConvertible,
-                                decodeToType type: [T].Type,
-                                completionHandler: @escaping ResultHandler<T>) {
+                             decodeToType type: [T].Type,
+                             completionHandler: @escaping ResultHandler<T>) {
         DispatchQueue.main.async {
             AF.request(request).responseData { response in
                 switch response.result {
-                case .success(_):
+                case .success(let data):
                     do {
-                        if let data = response.data {
-                            let decoder = JSONDecoder()
-                            let result = try decoder.decode([T].self, from: data)
-                            completionHandler(.success(result))
-                        } else {
-                           
-                        }
-                     
+                        
+                        let decoder = JSONDecoder()
+                        let result = try decoder.decode([T].self, from: data)
+                        completionHandler(.success(result))
+                        
                     } catch let error {
                         completionHandler(.failure(.decodeError(error)))
                     }
                 case .failure(let error):
+                   
                     completionHandler(.failure(.networkError(error)))
                 }
             }
-       
+            
         }
-   
+        
       }
 }
+
+
 enum NetworkError: Error {
-    case decodeError(Error)
     case networkError(Error)
+    case decodeError(Error)
+
+    var localizedDescription: String {
+        switch self {
+        case .networkError:
+            return "The Internet connection appears to be offline."
+        case .decodeError:
+            return "Failed to retrieving launches data."
+        }
+    }
 }

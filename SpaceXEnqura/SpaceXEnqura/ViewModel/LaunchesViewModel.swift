@@ -7,19 +7,14 @@
 
 import Foundation
 
-protocol LaunchesViewModelProtocol {
-    func fetchLaunches()
-    func sortLaunchesByDate()
-}
-
-class LaunchesViewModel: LaunchesViewModelProtocol, ObservableObject {
+class LaunchesViewModel: ObservableObject {
     
     fileprivate var launchesService: NetworkServiceProtocol? = NetworkService()
     
     public var didSuccess: ()->() = {}
     public var didFailure: (String)->() = { _ in }
     
-    @Published var launches: [FlightInfoModel] = []
+    @Published var launches: [LaunchModel] = []
     
     init() {}
     

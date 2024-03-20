@@ -9,13 +9,13 @@ import Foundation
 
 
 protocol NetworkServiceProtocol {
-    func getLaunches(completionHandler: @escaping ResultHandler<FlightInfoModel>)
+    func getLaunches(completionHandler: @escaping ResultHandler<LaunchModel>)
 }
 
 struct NetworkService: NetworkServiceProtocol {
-    func getLaunches(completionHandler: @escaping ResultHandler<FlightInfoModel>) {
+    func getLaunches(completionHandler: @escaping ResultHandler<LaunchModel>) {
         let finalRequest = PrepareNetworkRequest.getFeed(())
-        NetworkManager.shared.request(finalRequest, decodeToType: [FlightInfoModel].self, completionHandler: completionHandler)
+        NetworkManager.shared.request(finalRequest, decodeToType: [LaunchModel].self, completionHandler: completionHandler)
     }
     
     
